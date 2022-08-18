@@ -1,0 +1,62 @@
+
+
+
+@import "vars";
+
+
+.whatsapp{
+    background-color: $color-Principal;
+    @extend.contactossociales;
+    :hover{
+        background-color: blue;
+    }
+}
+
+.enviar{
+    color:red;}
+    
+
+.facebook{
+    @extend .contactossociales;
+    background-color: $color-Principal;
+}
+
+.instagram{
+    background-color: $color-Principal;
+    @extend .contactossociales
+}
+
+
+.contactossociales{
+    width: 256px;
+    height: 256px;
+}
+.mapa{
+    display: grid
+
+}
+
+#grid-container {
+    
+    display: grid;
+    background-color: black;
+    grid-template-columns: 400px 400px 400px 400px;
+
+    color: white;
+    grid-template-rows: 600px 600px 600px 600px;
+    gap: 10px;
+}
+
+.grid-item:nth-child(6) {
+    grid-column:2/4;
+}
+.grid-item:nth-child(12) {
+    grid-column: 1/3;
+}
+.grid-item:nth-child(15) {
+    grid-column: 1/3;
+}
+
+
+
+
